@@ -37,19 +37,49 @@ const ContentSection = () => {
       </h2>
       <Slider {...settings}>
         <div className="p-4">
-          <div className="bg-white p-20 rounded shadow-md">Card 1</div>
+          <div className="bg-white p-20 rounded shadow-md">
+            <img
+              src="https://st4.depositphotos.com/1682792/20544/i/450/depositphotos_205445200-stock-photo-orenburg-russia-august-2017-year.jpg"
+              alt="Academy 1"
+              style={{ width: "100%", height: "250px" }}
+            />
+          </div>
         </div>
         <div className="p-4">
-          <div className="bg-white p-20 rounded shadow-md">Card 2</div>
+          <div className="bg-white p-20 rounded shadow-md">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJ2bdpaINKf5qp8LQGXvwp5S2QQyrGIWdqn-P72pgMucFLQOGeLteu9-gNdHTkuoxBuYw&usqp=CAU"
+              alt="Academy 2"
+              style={{ width: "100%", height: "250px" }}
+            />
+          </div>
         </div>
         <div className="p-4">
-          <div className="bg-white p-20 rounded shadow-md">Card 3</div>
+          <div className="bg-white p-20 rounded shadow-md">
+            <img
+              src="https://www.shutterstock.com/image-photo/boy-soccer-player-training-running-260nw-1308980404.jpg"
+              alt="Academy 3"
+              style={{ width: "100%", height: "250px" }}
+            />
+          </div>
         </div>
         <div className="p-4">
-          <div className="bg-white p-20 rounded shadow-md">Card 4</div>
+          <div className="bg-white p-20 rounded shadow-md">
+            <img
+              src="https://media.glassdoor.com/l/13/ef/0b/db/benjamin%C3%A2-s-first-violin-lesson.jpg"
+              alt="Academy 4"
+              style={{ width: "100%", height: "250px" }}
+            />
+          </div>
         </div>
         <div className="p-4">
-          <div className="bg-white p-20 rounded shadow-md">Card 5</div>
+          <div className="bg-white p-20 rounded shadow-md">
+            <img
+              src="https://c8.alamy.com/comp/2PYKRRE/professional-teacher-learning-children-to-play-musical-instruments-in-music-class-2PYKRRE.jpg"
+              alt="Academy 5"
+              style={{ width: "100%", height: "250px" }}
+            />
+          </div>
         </div>
       </Slider>
     </section>
