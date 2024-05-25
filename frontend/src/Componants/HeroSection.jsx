@@ -3,9 +3,9 @@ import React from "react";
 const HeroSection = () => {
   return (
     <section className="bg-blue-200 p-13 flex items-center justify-center">
-      <div className="bg-white p-0 rounded-lg shadow-lg max-w-20xl w-full">
+      <div className="bg-slate-100 p-0 rounded-lg shadow-lg max-w-20xl w-full vh-140">
         <div className="flex flex-col md:flex-row items-center">
-          <div className="md:w-1/2 text-center md:text-left order-2 md:order-1">
+          <div className="md:w-1/2 text-center md:text-left order-2 md:order-1 ml-4">
             <h1 className="text-3xl font-bold mb-4">
               Find the Best Activity for your Child!
             </h1>
@@ -31,13 +31,12 @@ const HeroSection = () => {
                 style={{ backgroundImage: 'url("your-image-url-here")' }}
               >
                 {/* You can also use an img tag: */}
-                
-                  <img
-                    src="https://e1.pxfuel.com/desktop-wallpaper/525/1007/desktop-wallpaper-football-is-my-aesthetic-soccer-players-women-thumbnail.jpg"
-                    alt="Hero Image"
-                    className="w-full h-full object-cover rounded-md"
-                  />
-               
+
+                <img
+                  src="https://e1.pxfuel.com/desktop-wallpaper/525/1007/desktop-wallpaper-football-is-my-aesthetic-soccer-players-women-thumbnail.jpg"
+                  alt="Hero Image"
+                  className="w-full h-full object-cover rounded-md"
+                />
               </div>
             </div>
           </div>

@@ -32,7 +32,9 @@ const ContentSection = () => {
 
   return (
     <section className="bg-blue-200 p-10">
-      <h2 className="text-2xl font-bold mb-4">Explore Our Top Academies</h2>
+      <h2 className="text-2xl font-bold mb-4 text-amber-500">
+        Explore Our Top Academies
+      </h2>
       <Slider {...settings}>
         <div className="p-4">
           <div className="bg-white p-20 rounded shadow-md">Card 1</div>
