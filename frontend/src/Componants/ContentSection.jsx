@@ -1,15 +1,35 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const ContentSection = () => {
+  const [textIndex, setTextIndex] = useState(0);
+  const colors = [
+    "text-amber-500",
+    "text-red-500",
+    "text-green-500",
+    "text-blue-500",
+    "text-purple-500",
+  ];
+  const textArray = ["Explore", "Our", "Top", "Academies"];
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setTextIndex((prevIndex) => (prevIndex + 1) % textArray.length);
+    }, 500);
+
+    return () => clearInterval(interval);
+  }, [textArray.length]);
+
   const settings = {
     dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 1000,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
     responsive: [
@@ -32,52 +52,61 @@ const ContentSection = () => {
 
   return (
     <section className="bg-blue-200 p-10">
-      <h2 className="text-2xl font-bold mb-4 text-amber-500">
-        Explore Our Top Academies
+      <h2 className="text-2xl font-bold mb-4">
+        {textArray.map((text, index) => (
+          <span
+            key={index}
+            className={
+              textIndex === index ? colors[textIndex] : "text-gray-700"
+            }
+          >
+            {text}{" "}
+          </span>
+        ))}
       </h2>
       <Slider {...settings}>
-        <div className="p-4">
-          <div className="bg-white p-20 rounded shadow-md">
+        <div className="p-5">
+          <div className="bg-white p-4 rounded shadow-md h-64">
             <img
-              src="https://st4.depositphotos.com/1682792/20544/i/450/depositphotos_205445200-stock-photo-orenburg-russia-august-2017-year.jpg"
+              src="https://via.placeholder.com/400x250?text=Academy+1"
               alt="Academy 1"
-              style={{ width: "100%", height: "250px" }}
+              className="w-full h-full object-cover rounded"
             />
           </div>
         </div>
         <div className="p-4">
-          <div className="bg-white p-20 rounded shadow-md">
+          <div className="bg-white p-4 rounded shadow-md h-64">
             <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJ2bdpaINKf5qp8LQGXvwp5S2QQyrGIWdqn-P72pgMucFLQOGeLteu9-gNdHTkuoxBuYw&usqp=CAU"
+              src="https://via.placeholder.com/400x250?text=Academy+2"
               alt="Academy 2"
-              style={{ width: "100%", height: "250px" }}
+              className="w-full h-full object-cover rounded"
             />
           </div>
         </div>
         <div className="p-4">
-          <div className="bg-white p-20 rounded shadow-md">
+          <div className="bg-white p-4 rounded shadow-md h-64">
             <img
-              src="https://www.shutterstock.com/image-photo/boy-soccer-player-training-running-260nw-1308980404.jpg"
+              src="https://via.placeholder.com/400x250?text=Academy+3"
               alt="Academy 3"
-              style={{ width: "100%", height: "250px" }}
+              className="w-full h-full object-cover rounded"
             />
           </div>
         </div>
         <div className="p-4">
-          <div className="bg-white p-20 rounded shadow-md">
+          <div className="bg-white p-4 rounded shadow-md h-64">
             <img
-              src="https://media.glassdoor.com/l/13/ef/0b/db/benjamin%C3%A2-s-first-violin-lesson.jpg"
+              src="https://via.placeholder.com/400x250?text=Academy+4"
               alt="Academy 4"
-              style={{ width: "100%", height: "250px" }}
+              className="w-full h-full object-cover rounded"
             />
           </div>
         </div>
         <div className="p-4">
-          <div className="bg-white p-20 rounded shadow-md">
+          <div className="bg-white p-4 rounded shadow-md h-64">
             <img
-              src="https://c8.alamy.com/comp/2PYKRRE/professional-teacher-learning-children-to-play-musical-instruments-in-music-class-2PYKRRE.jpg"
+              src="https://via.placeholder.com/400x250?text=Academy+5"
               alt="Academy 5"
-              style={{ width: "100%", height: "250px" }}
+              className="w-full h-full object-cover rounded"
             />
           </div>
         </div>

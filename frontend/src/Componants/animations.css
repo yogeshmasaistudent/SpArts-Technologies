@@ -1,0 +1,88 @@
+@keyframes textColorChange {
+    0% {
+        color: #ff4e50;
+    }
+
+    25% {
+        color: #fc913a;
+    }
+
+    50% {
+        color: #f9d423;
+    }
+
+    75% {
+        color: #e5f72e;
+    }
+
+    100% {
+        color: #00c6ff;
+    }
+}
+
+@keyframes gradientBackground {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.gradient-text {
+    animation: textColorChange 4s infinite;
+    font-weight: bold;
+}
+
+.button-animate {
+    background: linear-gradient(270deg, #ff4e50, #fc913a, #f9d423, #e5f72e, #00c6ff);
+    background-size: 200% 200%;
+    animation: gradientBackground 8s ease infinite;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.button-animate:hover {
+    transform: scale(1.05);
+}
+
+@keyframes buttonTextColorChange {
+    0% {
+        color: #ff4e50;
+    }
+
+    25% {
+        color: #fc913a;
+    }
+
+    50% {
+        color: #f9d423;
+    }
+
+    75% {
+        color: #e5f72e;
+    }
+
+    100% {
+        color: #00c6ff;
+    }
+}
+
+.button-animate-text {
+    animation: buttonTextColorChange 4s infinite;
+    font-weight: bold;
+}
+
+.typing-wrapper {
+    height: 100px;
+    /* Adjust this height to match the tallest text */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
