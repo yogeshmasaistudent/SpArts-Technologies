@@ -36,7 +36,7 @@ const Footer = () => {
         />
         <button
           type="submit"
-          className="py-2 px-4 rounded-r transition-transform transition-colors duration-300 transform hover:scale-110 hover:shadow-lg"
+          className="py-2 px-4 rounded-r transition-transform duration-300 transform hover:scale-110 hover:shadow-lg"
           style={{
             background: `linear-gradient(to right, ${buttonColor}, #805ad5)`,
           }}

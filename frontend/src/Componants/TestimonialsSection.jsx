@@ -10,27 +10,32 @@ const TestimonialsSection = () => {
     {
       text: "My child's growth and happiness have skyrocketed since joining!",
       author: "Proud Parent",
-      image: "url_to_image_1.jpg",
+      image:
+        "https://www.shutterstock.com/image-photo/portrait-young-investor-banker-workplace-260nw-2364566447.jpg",
     },
     {
       text: "This academy has made learning a joyful experience for my kid!",
       author: "Happy Parent",
-      image: "url_to_image_2.jpg",
+      image:
+        "https://media.istockphoto.com/id/1135381120/photo/portrait-of-a-young-woman-outdoors-smiling.jpg?s=612x612&w=0&k=20&c=T5dukPD1r-o0BFqeqlIap7xzw07icucetwKaEC2Ms5M=",
     },
     {
       text: "The amazing team at the academy has truly transformed!",
       author: "Grateful Parent",
-      image: "url_to_image_3.jpg",
+      image:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfep5EJ7f5F5XjaWL1doD6Xv6gOrf-TVbbAkFpR0PclNpNAqy_3RW45foP8bNgd4TYlxc&usqp=CAU",
     },
     {
       text: "I never imagined my child could learn so much and have fun!",
       author: "Amazed Parent",
-      image: "url_to_image_4.jpg",
+      image:
+        "https://media.istockphoto.com/id/177848940/photo/portrait-of-a-overweight-woman-smiling.jpg?s=612x612&w=0&k=20&c=PmxiyhUB61YbEQllmXNbyGJHyEzgmOvu-6fc2kab-Wo=",
     },
     {
       text: "The teachers are dedicated and caring, making every day special.",
       author: "Appreciative Parent",
-      image: "url_to_image_5.jpg",
+      image:
+        "https://www.shutterstock.com/image-photo/sexy-fat-blonde-fashionable-white-260nw-1992529370.jpg",
     },
   ];
 
