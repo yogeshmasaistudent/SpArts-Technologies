@@ -39,10 +39,10 @@ const HeroSection = () => {
             </div>
           </div>
           <div className="flex flex-col md:flex-row lg:flex-row justify-center items-center gap-10 mt-10">
-            <button className="button-animate p-2 px-12 rounded-3xl text-white font-medium">
+            <button className="button-animate p-0 px-9 rounded-3xl text-white font-medium">
               <span className="button-animate-text">For Academies</span>
             </button>
-            <button className="button-animate p-2 px-6 rounded-3xl text-white font-medium">
+            <button className="button-animate p-0 px-9 rounded-3xl text-white font-medium">
               <span className="button-animate-text">SpArts in your home</span>
             </button>
           </div>
