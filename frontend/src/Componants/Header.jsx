@@ -23,7 +23,7 @@ const Header = () => {
       }`}
     >
       <div className="text-2xl font-bold transition-transform duration-300 transform hover:scale-110 hover:rotate-3">
-        Logo
+        <img src="https://assets.softr-files.com/applications/7c9443d6-15a9-495f-a44d-a0d3dceddeea/assets/5d87a207-dfb1-4e4e-88b4-4fb4e474e1d4.png" className="w-20 h-7" />
       </div>
       <nav>
         <ul className="flex space-x-4">

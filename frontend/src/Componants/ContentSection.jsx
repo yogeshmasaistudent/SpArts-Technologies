@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 const ContentSection = () => {
   const [textIndex, setTextIndex] = useState(0);
   const colors = [
@@ -123,7 +123,7 @@ const NextArrow = (props) => {
       className="absolute top-1/2 right-0 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full cursor-pointer"
       onClick={onClick}
     >
-      &rarr;
+      <FaArrowRight />
     </div>
   );
 };
@@ -133,10 +133,10 @@ const PrevArrow = (props) => {
   const { onClick } = props;
   return (
     <div
-      className="absolute top-1/2 left-0 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full cursor-pointer"
+      className="absolute top-1/2 left-0 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full cursor-pointer "
       onClick={onClick}
     >
-      &larr;
+      <FaArrowLeft />
     </div>
   );
 };

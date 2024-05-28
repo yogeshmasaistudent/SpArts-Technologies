@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./Testimonial.css"; // Ensure you have this file for additional styles
-
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 const TestimonialsSection = () => {
   const [textIndex, setTextIndex] = useState(0);
   const testimonials = [
@@ -126,7 +126,7 @@ const NextArrow = (props) => {
       className="absolute top-1/2 right-0 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full cursor-pointer"
       onClick={onClick}
     >
-      &rarr;
+      <FaArrowRight />
     </div>
   );
 };
@@ -139,7 +139,7 @@ const PrevArrow = (props) => {
       className="absolute top-1/2 left-0 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full cursor-pointer"
       onClick={onClick}
     >
-      &larr;
+      <FaArrowLeft />
     </div>
   );
 };
