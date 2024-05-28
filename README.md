@@ -25,7 +25,7 @@ You can view a live demo of the application [here](https://sp-arts-technologies.
 
 
 ## Video Demo
-A video demo of the application can be found [here](https://drive.google.com/file/d/1Vdm04JIQMsA_6JIAZ7GHZCszAmC6TJmG/view?usp=sharing).
+A video demo of the application can be found [here](https://drive.google.com/file/d/1sGUFoav-_rM8hmI9KPT2y_5YaYGeu9xJ/view?usp=sharing).
 
 ## Features
 - **Hero Section**: A welcoming section with an image and buttons for academies and in-home activities.
